@@ -1,0 +1,116 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  background: #87e0fd;
+  background: linear-gradient(to bottom, #87e0fd 0%, #05abe0 100%);
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+.login-box {
+  margin: auto;
+  width: 30rem;
+  border: 1px solid #fff;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0px 5px 3px -3px rgba(0, 0, 0, 0.5);
+}
+
+.login-title {
+  margin: 0 0 2rem;
+  text-align: center;
+}
+
+.username,
+.password {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #000;
+}
+
+.login {
+  padding: 1rem;
+  font-size: 1rem;
+  float: right;
+  background-color: #30ade8;
+  border: 1px solid #000;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.link {
+  line-height: 3rem;
+  padding: 0.5rem;
+  color: #000;
+  text-decoration: none;
+}
+
+.link:hover,
+.link:active {
+  color: #30ade8;
+  text-decoration: underline;
+}
+
+.inputs {
+  border: none;
+}
+
+.actions {
+  border: none;
+}
+
+/* W3C Recommendations for Accessibilty */
+
+/* Recommended way to hide labels */
+.hide {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* Browsers do not have enough contrast ratio for placeholder, this bring it up to the right level of contrast */
+::-webkit-input-placeholder {
+  color: #777;
+  opacity: 1;
+}
+
+:-moz-placeholder {
+  color: #777;
+  opacity: 1;
+}
+
+::-moz-placeholder {
+  color: #777;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #777;
+  opacity: 1;
+}
